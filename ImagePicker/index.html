@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Picker</title>
+</head>
+<style>
+	select {
+		width: 100%;
+		height: 40px; 		
+	}
+	img {
+		margin: 40px 30%;
+	}
+</style>
+<body>
+	<select>
+		<option>-- Pilih gambar Hewan --</option>
+		<option value="berang">Berang berang</option>
+		<option value="kucing">Kucing</option>
+		<option value="jerapah">Jerapah</option>
+		<option value="burung">Burung</option>
+		<option value="rubah">Rubah</option>
+		<option value="tupai">Tupai</option>
+	</select>
+	<img>
+</body>
+<script>
+const pilihan = document.querySelector('select')
+
+pilihan.onclick = function () {
+	let img = document.querySelector('img')
+	if (pilihan.value == "berang") {
+		img.setAttribute("src", "1.jpg") 
+	} else if (pilihan.value == "kucing") {
+		img.setAttribute("src", "2.jpg") 
+	} else if (pilihan.value == "jerapah") {
+		img.setAttribute("src", "3.jpg") 
+	} else if (pilihan.value == "burung") {
+		img.setAttribute("src", "4.jpg") 
+	} else if (pilihan.value == "rubah") {
+		img.setAttribute("src", "5.jpg") 
+	} else if (pilihan.value == "tupai") {
+		img.setAttribute("src", "6.jpg") 
+	}
+}
+</script>
+</html>
